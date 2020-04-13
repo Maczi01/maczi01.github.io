@@ -1,6 +1,6 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
 html {
   box-sizing: border-box;
@@ -11,6 +11,15 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: $black;
+  background: $white;
+  font-family: 'Lato', sans-serif;
+}
+
+.main{
+  //margin: ;
+}
+
+.hero{
+  background-image: url("../assets/img/me.png");
 }
