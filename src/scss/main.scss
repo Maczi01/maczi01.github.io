@@ -1,6 +1,7 @@
 @import "_normalize";
 @import "_variables";
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import "../../src/scss/modules/hero";
 
 html {
   box-sizing: border-box;
@@ -14,12 +15,13 @@ body {
   color: $black;
   background: $white;
   font-family: 'Lato', sans-serif;
+  border: 16px solid $black;
 }
 
-.main{
+.main {
   //margin: ;
 }
 
-.hero{
-  background-image: url("../assets/img/me.png");
+.hero {
+
 }
