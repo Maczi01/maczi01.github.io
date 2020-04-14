@@ -311,12 +311,12 @@ template {
 .hero {
   max-width: 1184px;
   height: 700px;
-  padding: 112px 0 200px;
+  padding: 112px 0 184px;
   margin: 0 auto;
   background-image: url("../../assets/img/me.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 40%; }
+  background-size: 50%; }
   .hero__title {
     max-width: 780px;
     font-style: normal;
@@ -339,9 +339,205 @@ template {
     line-height: 3.5rem;
     margin-bottom: 3.75rem; }
 
+.skills {
+  max-width: 1184px;
+  margin: 0 auto 4rem; }
+  .skills__title {
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    border-bottom: 2px solid #839BD9;
+    padding: 1rem 0; }
+
+.skills__list {
+  display: -ms-grid;
+  display: grid;
+  padding: 8rem 0 0;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem; }
+  .skills__list--list {
+    list-style-type: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: calc(1.5rem + 4px);
+    padding: 0; }
+  .skills__list--item {
+    padding: 11px 0 11px 30px;
+    position: relative;
+    min-height: 40px; }
+    .skills__list--item::before {
+      position: absolute;
+      top: 15px;
+      left: 0;
+      content: "";
+      height: 10px;
+      width: 10px;
+      display: block;
+      background-image: url("../../assets/img/reclightblue.svg"); }
+      .skills__list--gray .skills__list--item::before {
+        background-image: url("../../assets/img/recgray.svg"); }
+      .skills__list--blue .skills__list--item::before {
+        background-image: url("../../assets/img/recblue.svg"); }
+  .skills__list--title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 44px;
+    margin: 0; }
+    .skills__list--title::before {
+      content: "";
+      width: 80px;
+      height: 4px;
+      display: block;
+      border-radius: 2px;
+      background-color: #3581E0;
+      margin-bottom: 1.5rem; }
+      .skills__list--gray .skills__list--title::before {
+        background-image: url("../../assets/img/recgray.svg"); }
+      .skills__list--blue .skills__list--title::before {
+        background-image: url("../../assets/img/recblue.svg"); }
+
+.projects {
+  padding: 1rem 0;
+  max-width: 1184px;
+  margin: 0 auto 8rem; }
+  .projects__title {
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    border-bottom: 2px solid #839BD9;
+    padding: 1rem 0; }
+  .projects__description {
+    font-size: 1.25rem;
+    max-width: 580px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.5rem;
+    margin-bottom: 3.75rem; }
+
+.projects__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  border-radius: 8px;
+  list-style-type: none; }
+
+.project {
+  background-color: #F8F8F8;
+  -webkit-box-shadow: 0 6px 16px rgba(24, 41, 67, 0.05);
+          box-shadow: 0 6px 16px rgba(24, 41, 67, 0.05);
+  overflow: hidden;
+  position: relative; }
+  .project__link {
+    color: #203F63;
+    text-decoration: none;
+    line-height: 2rem;
+    font-size: 1.125rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .project__link + .project__link {
+      margin-left: 48px;
+      position: relative; }
+      .project__link + .project__link::after {
+        content: "";
+        height: 32px;
+        width: 2px;
+        background: black;
+        display: block;
+        position: absolute;
+        left: -26px; }
+    .project__link::before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      background: url("../../assets/img/demoico.svg") center center no-repeat; }
+    .project__link--code::before {
+      background: url("../../assets/img/repoico.svg") center center no-repeat; }
+  .project__title {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.25rem;
+    margin: 1rem 0; }
+  .project__footer {
+    padding: 1rem 5rem;
+    background-color: white;
+    height: 50px;
+    text-align: right; }
+  .project__description {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    margin: 0 0 4rem; }
+  .project__container {
+    padding: 3rem; }
+
+.contact {
+  background-color: #5C5C5C;
+  color: white;
+  padding-bottom: 112px;
+  position: relative; }
+  .contact__mail {
+    color: #3581E0;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3581E0;
+    display: inline-block;
+    margin-top: 3rem; }
+  .contact__description {
+    font-size: 1.25rem;
+    max-width: 580px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.5rem;
+    margin: 0 0 1.5rem; }
+  .contact__title {
+    font-size: 2.25rem;
+    margin: 0 auto 1rem;
+    font-style: normal;
+    font-weight: 700;
+    padding: 8rem 0 0;
+    max-width: 1184px; }
+    .contact__title::before {
+      content: "";
+      width: 80px;
+      height: 4px;
+      display: block;
+      border-radius: 2px;
+      background-color: #3581E0;
+      margin-bottom: 1.5rem; }
+
+.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .social__item + .social__item {
+    margin-left: 1.5rem; }
+  .social__link {
+    text-decoration: none; }
+
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -349,8 +545,29 @@ html {
 
 body {
   color: #000000;
-  background: #F8F8F8;
+  background: white;
   font-family: 'Lato', sans-serif;
   border: 16px solid #000000; }
+
+.container {
+  max-width: 1184px;
+  margin: 0 auto; }
+
+#triangle1 {
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  border-top: 83px solid #ffffff;
+  border-right: 401px solid transparent;
+  /* margin: 25px auto 0; */
+  position: absolute; }
+
+#triangle2 {
+  top: 0;
+  right: 0;
+  border-top: 215px solid #ffffff;
+  border-left: 1089px solid transparent;
+  position: absolute; }
 
 /*# sourceMappingURL=main.css.map */

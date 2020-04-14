@@ -57,64 +57,94 @@
         <section class="skills__list">
             <h3 class="skills__list--title">Working knowledge</h3>
             <ul class="skills__list--list">
-                <li>Semantic HTML5</li>
-                <li>JS lcalstorage</li>
-                <li>Markdown</li>
-                <li>Figma</li>
-                <li>JS DOM manipulations</li>
-                <li>Flex box</li>
+                <li class="skills__list--item">Semantic HTML5</li>
+                <li class="skills__list--item">JS localStorage</li>
+                <li class="skills__list--item">Markdown</li>
+                <li class="skills__list--item">Figma</li>
+                <li class="skills__list--item">JS DOM manipulations</li>
+                <li class="skills__list--item">Flex box</li>
             </ul>
         </section>
-        <section class="skills__list">
-            <h3 class="skills__list--title">Knew something about</h3>
+        <section class="skills__list skills__list--gray">
+            <h3 class="skills__list--title skills__list--gray">Knew something about</h3>
             <ul class="skills__list--list">
-                <li>Semantic HTML5</li>
-                <li>JS lcalstorage</li>
-                <li>Markdown</li>
-                <li>Figma</li>
-                <li>JS DOM manipulations</li>
-                <li>Flex box</li>
+                <li class="skills__list--item">Semantic HTML5</li>
+                <li class="skills__list--item">JS localStorage</li>
+                <li class="skills__list--item">Markdown</li>
+                <li class="skills__list--item">Figma</li>
+                <li class="skills__list--item">JS DOM manipulations</li>
+                <li class="skills__list--item">Flex box</li>
             </ul>
         </section>
-        <section class="skills__list">
-            <h3 class="skills__list--title">Want to learn</h3>
+        <section class="skills__list skills__list--blue">
+            <h3 class="skills__list--title skills__list--blue">Want to learn</h3>
             <ul class="skills__list--list">
-                <li>Semantic HTML5</li>
-                <li>JS lcalstorage</li>
-                <li>Markdown</li>
-                <li>Figma</li>
-                <li>JS DOM manipulations</li>
-                <li>Flex box</li>
+                <li class="skills__list--item">Semantic HTML5</li>
+                <li class="skills__list--item">JS localStorage</li>
+                <li class="skills__list--item">Markdown</li>
+                <li class="skills__list--item">Figma</li>
+                <li class="skills__list--item">JS DOM manipulations</li>
+                <li class="skills__list--item">Flex box</li>
             </ul>
         </section>
     </section>
+
     <section id="my-projects" class="projects">
         <h2 class="projects__title">Recent projects</h2>
-        <p class="projects__description">My last project </p>
-        <ul class="projects__list">
-            <li class="project">
-                <img src="../assets/img/githubico.svg" class="project__logo" alt="logo github">
-                <h3 class="project__title">titeł</h3>
-                <p class="project__description">Opis projektu</p>
-                <footer class="project__footer">
-                    <a class="project__link" href="#">Demo</a>
-                    <a class="project__link" href="#">Repository</a>
-                </footer>
-            </li>
-        </ul>
+        <div class="container">
+            <p class="projects__description">My last project </p>
+            <ul class="projects__list">
+<!--                <li class="project">-->
+<!--                    <div class="project__container">-->
 
+<!--                        <img src="../assets/img/githubico.svg" class="project__logo" alt="logo github">-->
+<!--                        <h3 class="project__title">titeł</h3>-->
+<!--                        <p class="project__description">Opis projektu</p>-->
+<!--                    </div>-->
+<!--                    <footer class="project__footer">-->
+<!--                        <a class="project__link project__link&#45;&#45;demo" href="#">Demo</a>-->
+<!--                        <a class="project__link project__link&#45;&#45;code" href="#">Repository</a>-->
+<!--                    </footer>-->
+<!--                </li>-->
+
+<!--                <li class="project">-->
+<!--                    <div class="project__container">-->
+<!--                        <img src="../assets/img/githubico.svg" class="project__logo" alt="logo github">-->
+<!--                        <h3 class="project__title">titeł</h3>-->
+<!--                        <p class="project__description">Opis projektu</p>-->
+<!--                    </div>-->
+<!--                    <footer class="project__footer">-->
+<!--                        <a class="project__link project__link&#45;&#45;demo" href="#">Demo</a>-->
+<!--                        <a class="project__link project__link&#45;&#45;code" href="#">Repository</a>-->
+<!--                    </footer>-->
+<!--                </li>-->
+            </ul>
+        </div>
 
     </section>
 
     <section id="contact" class="contact">
+        <div id="triangle1"></div>
+        <div id="triangle2"></div>
         <h2 class="contact__title">Contact me</h2>
-        <p class="contact__description">Contact me</p>
-        <ul class="contact__links">
-            <li class="contact__links--item">facebook</li>
-            <li class="contact__links--item"></li>
-            <li class="contact__links--item"></li>
-        </ul>
-        <a href="mailto:mateusz.w.twardy@gmail.com"></a>
+        <div class="container">
+            <p class="contact__description">I’m open for new opportunities. If you have one for me we should talk!</p>
+            <ul class="social">
+                <li class="social__item">
+                    <a class="social__link">
+                        <img src="../assets/img/githubico.svg"/> </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link">
+                        <img src="../assets/img/githubico.svg"/> </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link">
+                        <img src="../assets/img/githubico.svg"/> </a>
+                </li>
+            </ul>
+            <a class="contact__mail" href="mailto:mateusz.w.twardy@gmail.com"></a>
+        </div>
     </section>
 </main>
 <script src="js/main.js"></script>
