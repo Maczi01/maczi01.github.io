@@ -2,9 +2,11 @@
 @import "_variables";
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 @import "../../src/scss/modules/hero";
+@import "../../src/scss/modules/skills";
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
