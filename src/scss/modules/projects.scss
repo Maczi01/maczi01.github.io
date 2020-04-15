@@ -46,7 +46,6 @@
 
     & + & {
       margin-left: 48px;
-      //padding-left: 24px;
       position: relative;
 
       &::after {
@@ -70,10 +69,6 @@
 
     }
 
-    //&--demo {
-    //  background: url("../../assets/img/repoico.svg") center center no-repeat;
-    //}
-
     &--code::before {
       background: url("../../assets/img/repoico.svg") center center no-repeat;
     }
@@ -84,7 +79,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: 2.25rem;
-    //margin: 1rem 0.5rem;
     margin: 1rem 0;
   }
 

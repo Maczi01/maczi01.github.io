@@ -5,7 +5,8 @@ const list = document.querySelector(".projects__list");
 const side = document.querySelector(".side");
 
 fetch("https://api.github.com/users/maczi01/repos?sort=updated&direction=desc")
-    .then(res => res.json()).then(res => {
+    .then(res => res.json())
+    .then(res => {
     res.map(r => {
         const {name, html_url, description, homepage} = r
         list.innerHTML += `
