@@ -4,8 +4,7 @@ console.log(`Hello world!`);
 const list = document.querySelector(".projects__list");
 fetch("https://api.github.com/users/maczi01/repos?sort=updated&direction=desc")
     .then(res => res.json()).then(res => {
-    const repos = res;
-    repos.map(r => {
+    res.map(r => {
         const {name, html_url, description, homepage} = r
         list.innerHTML += `
   <li class="project">

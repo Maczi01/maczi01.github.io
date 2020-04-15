@@ -25,21 +25,4 @@ body {
   max-width: $max-width;
   margin: 0 auto;
 }
-#triangle1 {
-  width: 0;
-  height: 0;
-  top: 0;
-  left: 0;
-  border-top: 83px solid #ffffff;
-  border-right: 401px solid transparent;
-  /* margin: 25px auto 0; */
-  position: absolute;
-}
-#triangle2{
-  top: 0;
-  right: 0;
-  border-top: 215px solid #ffffff;
-  border-left: 1089px solid transparent;
-  //margin: 25px auto 0;
-  position: absolute;
-}
+
