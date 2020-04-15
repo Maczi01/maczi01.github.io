@@ -349,8 +349,8 @@ template {
     font-size: 2.25rem;
     font-style: normal;
     font-weight: 400;
-    border-bottom: 2px solid #839BD9;
-    padding: 1rem 0; }
+    border-bottom: 4px solid #3581E0;
+    padding: 10px; }
 
 .skills__list {
   display: -ms-grid;
@@ -564,7 +564,8 @@ body {
   color: #000000;
   background: white;
   font-family: 'Lato', sans-serif;
-  border: 16px solid #000000; }
+  border: 16px solid #000000;
+  font-size: 16px; }
 
 .container {
   max-width: 80vw;
