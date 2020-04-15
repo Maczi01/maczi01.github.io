@@ -1,5 +1,6 @@
 "use strict";
-
+//paginacja https://www.youtube.com/watch?v=IqYiVHrO2U8
+//paginacja https://github.com/TylerPottsDev/vanillajs-pagination/blob/master/main.js
 console.log(`Hello world!`);
 const list = document.querySelector(".projects__list");
 const side = document.querySelector(".side");
