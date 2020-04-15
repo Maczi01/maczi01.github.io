@@ -2,6 +2,8 @@
 
 console.log(`Hello world!`);
 const list = document.querySelector(".projects__list");
+const side = document.querySelector(".side");
+
 fetch("https://api.github.com/users/maczi01/repos?sort=updated&direction=desc")
     .then(res => res.json()).then(res => {
     res.map(r => {
@@ -20,4 +22,15 @@ fetch("https://api.github.com/users/maczi01/repos?sort=updated&direction=desc")
         </footer>
         </li>`
     })
-})
+});
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) {
+        side.classList.add('side--visible');
+        side.classList.remove('side');
+    } else {
+        side.classList.remove('side--visible');
+        side.classList.add('side');
+    }
+});
+

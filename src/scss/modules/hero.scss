@@ -6,9 +6,10 @@
   background-image: url("../../assets/img/me.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  z-index: -1;
-  background-size: 50%;
+  //z-index: -1;
+  background-size: 40vw;
   position: relative;
+  z-index: 1;
   &__title {
     max-width: 780px;
     font-style: normal;
