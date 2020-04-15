@@ -6,8 +6,9 @@
   background-image: url("../../assets/img/me.png");
   background-repeat: no-repeat;
   background-position: right bottom;
+  z-index: -1;
   background-size: 50%;
-
+  position: relative;
   &__title {
     max-width: 780px;
     font-style: normal;
@@ -26,6 +27,7 @@
     text-decoration: none;
     padding-bottom: 8px;
     border-bottom: 2px solid $lightblue;
+    z-index: 1;
   }
 
   &__description {
