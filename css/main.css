@@ -412,8 +412,8 @@ template {
     font-size: 2.25rem;
     font-style: normal;
     font-weight: 400;
-    border-bottom: 2px solid #839BD9;
-    padding: 1rem 0; }
+    border-bottom: 4px solid #203F63;
+    padding: 10px; }
   .projects__description {
     font-size: 1.25rem;
     max-width: 580px;
@@ -427,19 +427,22 @@ template {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -webkit-column-gap: 1.5rem;
-     -moz-column-gap: 1.5rem;
-          column-gap: 1.5rem;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
   row-gap: 1.5rem;
   border-radius: 8px;
   list-style-type: none; }
 
 .project {
   background-color: #F8F8F8;
-  -webkit-box-shadow: 0 6px 16px rgba(24, 41, 67, 0.05);
-          box-shadow: 0 6px 16px rgba(24, 41, 67, 0.05);
+  -webkit-box-shadow: 0 6px 16px rgba(20, 22, 43, 0.2);
+          box-shadow: 0 6px 16px rgba(20, 22, 43, 0.2);
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  border-radius: 15px; }
+  .project__logo {
+    padding: 0.5rem; }
   .project__link {
     color: #203F63;
     text-decoration: none;
@@ -453,12 +456,13 @@ template {
             align-items: center; }
     .project__link + .project__link {
       margin-left: 48px;
-      position: relative; }
+      position: relative;
+      pointer-events: none; }
       .project__link + .project__link::after {
         content: "";
         height: 32px;
         width: 2px;
-        background: black;
+        background: #839BD9;
         display: block;
         position: absolute;
         left: -26px; }
@@ -476,9 +480,9 @@ template {
     font-style: normal;
     font-weight: 700;
     line-height: 2.25rem;
-    margin: 1rem 0; }
+    margin: 1rem 0 0 1rem; }
   .project__footer {
-    padding: 1rem 5rem;
+    padding: 0.5rem 1rem;
     background-color: white;
     height: 50px;
     text-align: right; }
@@ -486,9 +490,10 @@ template {
     font-style: normal;
     font-weight: 400;
     line-height: 2rem;
-    margin: 0 0 4rem; }
+    margin: 0.5rem 0 3rem 1rem;
+    font-size: 1.25rem; }
   .project__container {
-    padding: 3rem; }
+    padding: 1rem; }
 
 .contact {
   background-color: #5C5C5C;
