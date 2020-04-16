@@ -1,6 +1,7 @@
 "use strict";
 //paginacja https://www.youtube.com/watch?v=IqYiVHrO2U8
 //paginacja https://github.com/TylerPottsDev/vanillajs-pagination/blob/master/main.js
+//underliny https://codepen.io/cassie-codes/pen/rNNGdmw
 console.log(`Hello world!`);
 const list = document.querySelector(".projects__list");
 const side = document.querySelector(".side");
@@ -19,8 +20,9 @@ fetch("https://api.github.com/users/maczi01/repos?sort=updated&direction=desc")
         <p class="project__description">${description}</p>
     </div>
     <footer class="project__footer">
-        <a class="project__link project__link--demo" href="${html_url}">Demo</a>
-        <a class="project__link project__link--code" href="${homepage}">Repository</a>
+        ${homepage ? `<a class="project__link project__link--demo" href="${homepage}">Demo</a>`
+         : ""}
+        <a class="project__link project__link--code" href="${html_url}">Repository</a>
         </footer>
         </li>`
         })
