@@ -52,7 +52,6 @@
     & + & {
       margin-left: 48px;
       position: relative;
-      pointer-events: none;
 
       &::after {
         content: "";
@@ -62,6 +61,8 @@
         display: block;
         position: absolute;
         left: -26px;
+        pointer-events: none;
+
       }
     }
 

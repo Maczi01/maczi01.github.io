@@ -19,10 +19,16 @@ fetch("https://api.github.com/users/maczi01/repos?sort=updated&direction=desc")
         <h3 class="project__title">${name}</h3>
         <p class="project__description">${description}</p>
     </div>
+    
+
+    
+    
+    
     <footer class="project__footer">
-        ${homepage ? `<a class="project__link project__link--demo" href="${homepage}">Demo</a>`
-         : ""}
-        <a class="project__link project__link--code" href="${html_url}">Repository</a>
+        ${homepage ? `<a class="project__link project__link--demo" href="${homepage}"target="_blank" rel="nofollow noreferrer" title="Demo: ${name}.">Demo</a>`
+                : ""}
+        <a class="project__link project__link--code" href="${html_url}" target="_blank" rel="nofollow noreferrer"  title="Source code: ${name}.">Repository</a>
+        
         </footer>
         </li>`
         })
