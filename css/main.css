@@ -456,8 +456,7 @@ template {
             align-items: center; }
     .project__link + .project__link {
       margin-left: 48px;
-      position: relative;
-      pointer-events: none; }
+      position: relative; }
       .project__link + .project__link::after {
         content: "";
         height: 32px;
@@ -465,7 +464,8 @@ template {
         background: #839BD9;
         display: block;
         position: absolute;
-        left: -26px; }
+        left: -26px;
+        pointer-events: none; }
     .project__link::before {
       content: "";
       display: block;
