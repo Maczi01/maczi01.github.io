@@ -36,7 +36,7 @@
   overflow: hidden;
   position: relative;
   border-radius: 15px;
-
+  min-height: 18rem;
   &__logo {
     padding: 0.5rem;
   }
@@ -94,7 +94,11 @@
     background-color: white;
     height: 50px;
     text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
+
 
   &__description {
     font-style: normal;
