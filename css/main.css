@@ -440,7 +440,8 @@ template {
           box-shadow: 0 6px 16px rgba(20, 22, 43, 0.2);
   overflow: hidden;
   position: relative;
-  border-radius: 15px; }
+  border-radius: 15px;
+  min-height: 18rem; }
   .project__logo {
     padding: 0.5rem; }
   .project__link {
@@ -485,7 +486,10 @@ template {
     padding: 0.5rem 1rem;
     background-color: white;
     height: 50px;
-    text-align: right; }
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
   .project__description {
     font-style: normal;
     font-weight: 400;
