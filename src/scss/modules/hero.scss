@@ -3,11 +3,12 @@
   height: 700px;
   padding: 112px 0 184px;
   margin: 0 auto;
-  background-image: url("../../assets/img/me.png");
+  //background-image: url("../../assets/img/me.png");
+  background-image: url("../../assets/img/i.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   //z-index: -1;
-  background-size: 40vw;
+  background-size: 35vw;
   position: relative;
   z-index: 1;
   &__title {
@@ -33,7 +34,7 @@
 
   &__description {
     font-size: 1.25rem;
-    max-width: 780px;
+    max-width: 40vw;
 
     font-style: normal;
     font-weight: 400;

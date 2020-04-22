@@ -28,25 +28,6 @@ body {
   margin: 0 auto;
 }
 
-#triangle1 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  border-bottom: 83px solid white;
-  border-left: 401px solid transparent;
-  margin: 25px auto 0;
-}
-
-#triangle2 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  border-bottom: 215px solid white;
-  border-right: 1089px solid transparent;
-  margin: 25px auto 0;
-  z-index: -1;
-}
-
 .side{
   opacity: 0;
 
@@ -62,7 +43,7 @@ body {
   position: fixed;
   bottom: 10px;
   right: 40px;
-  background-image: url("../assets/img/arrow.png") ;
+  background-image: url("../assets/img/arrowup.svg") ;
   background-position: center center;
   background-size: 90%;
   background-repeat: no-repeat;
