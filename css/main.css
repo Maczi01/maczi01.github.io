@@ -444,6 +444,23 @@ template {
   min-height: 18rem; }
   .project__logo {
     padding: 0.5rem; }
+  .project__language {
+    position: relative;
+    margin: 0.5rem 0 0 1rem; }
+    .project__language--item {
+      padding: 8px 0 0 20px;
+      margin: 0.2rem;
+      display: block;
+      font-size: 1.25rem; }
+      .project__language--item::before {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        background: url("../../assets/img/dot.svg"); }
   .project__link {
     color: #203F63;
     text-decoration: none;
@@ -483,7 +500,7 @@ template {
     line-height: 2.25rem;
     margin: 1rem 0 0 1rem; }
   .project__footer {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     background-color: white;
     height: 50px;
     text-align: right;
