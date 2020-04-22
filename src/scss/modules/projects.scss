@@ -40,6 +40,30 @@
   &__logo {
     padding: 0.5rem;
   }
+  &__language{
+    position: relative;
+    margin: 0.5rem 0 0 1rem;
+
+    &--item{
+      padding: 8px 0 0 20px;
+      //margin: 0.5rem 0 0.5rem 0;
+      margin: 0.2rem;
+      display: block;
+      font-size: 1.25rem;
+
+      &::before {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        background: url('../../assets/img/dot.svg');
+      }
+    }
+  }
+
 
   &__link {
     color: $blue;
@@ -48,7 +72,6 @@
     font-size: 1.125rem;
     display: inline-flex;
     align-items: center;
-
     & + & {
       margin-left: 48px;
       position: relative;
@@ -73,7 +96,6 @@
       height: 24px;
       margin-right: 8px;
       background: url("../../assets/img/demoico.svg") center center no-repeat;
-
     }
 
     &--code::before {
@@ -90,7 +112,7 @@
   }
 
   &__footer {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     background-color: white;
     height: 50px;
     text-align: right;
