@@ -1,22 +1,31 @@
 .hero {
   max-width: 1216px;
   height: 700px;
-  padding: 112px 16px  184px;
+  padding: calc(8rem - 16px) 16px 11.5rem;
   margin: 0 auto;
-  //background-image: url("../../assets/img/me.png");
   background-image: url("../../assets/img/i.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  //z-index: -1;
   background-size: 35vw;
   position: relative;
   z-index: 1;
+  @media (max-width: $mobile) {
+    //padding: calc(8rem - 16px) 16px 184px;
+    padding: 12rem 16px 184px;
+    //background: none;
+    background-position: left top;
+
+  }
+
   &__title {
     max-width: 780px;
     font-style: normal;
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 3.5rem;
+    @media (max-width: $mobile) {
+      margin: 16px 0 8px;
+    }
   }
 
   &__link {
@@ -34,8 +43,7 @@
 
   &__description {
     font-size: 1.25rem;
-    max-width: 40vw;
-
+    max-width: 680px;
     font-style: normal;
     font-weight: 400;
     line-height: 3.5rem;

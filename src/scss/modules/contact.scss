@@ -59,6 +59,10 @@
       border-top: 215px solid #ffffff;
       border-left: 1089px solid transparent;
     }
+
+    @media (max-width: $mobile) {
+      display: none
+    }
   }
 }
 

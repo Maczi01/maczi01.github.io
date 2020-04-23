@@ -28,13 +28,19 @@
   row-gap: 1.5rem;
   border-radius: 8px;
   list-style-type: none;
+  @media (max-width: $mobile) {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
 }
 
 .project {
   background-color: $white;
   box-shadow: 0 6px 16px rgba(20, 22, 43, 0.2);
   overflow: hidden;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //position: relative;
   border-radius: 15px;
   min-height: 18rem;
   &__logo {
@@ -115,8 +121,6 @@
     background-color: white;
     height: 50px;
     text-align: right;
-    position: absolute;
-    bottom: 0;
     width: 100%;
   }
 
