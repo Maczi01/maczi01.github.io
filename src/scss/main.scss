@@ -9,6 +9,9 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  @media (max-width: $mobile) {
+    font-size: 12px;
+  }
 }
 
 *, *:before, *:after {
@@ -24,7 +27,8 @@ body {
 }
 
 .container {
-  max-width: $max-width;
+  max-width: 1200px;
+  padding: 0 8px;
   margin: 0 auto;
 }
 
