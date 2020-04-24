@@ -474,12 +474,12 @@ template {
   .project__language {
     position: relative;
     margin: 0.5rem 0 0 1rem; }
-    .project__language--item {
+    .project__language--item1 {
       padding: 0 0 0 20px;
       margin: 0.2rem;
       display: block;
       font-size: 1.25rem; }
-      .project__language--item::before {
+      .project__language--item1::before {
         position: absolute;
         top: 3px;
         left: 0;
@@ -487,7 +487,49 @@ template {
         display: block;
         width: 18px;
         height: 18px;
-        background: url("../../assets/img/dot.svg"); }
+        background: url("../../assets/img/dot1.svg"); }
+    .project__language--item2 {
+      padding: 0 0 0 20px;
+      margin: 0.2rem;
+      display: block;
+      font-size: 1.25rem; }
+      .project__language--item2::before {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        background: url("../../assets/img/dot2.svg"); }
+    .project__language--item3 {
+      padding: 0 0 0 20px;
+      margin: 0.2rem;
+      display: block;
+      font-size: 1.25rem; }
+      .project__language--item3::before {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        background: url("../../assets/img/dot3.svg"); }
+    .project__language--item4 {
+      padding: 0 0 0 20px;
+      margin: 0.2rem;
+      display: block;
+      font-size: 1.25rem; }
+      .project__language--item4::before {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        background: url("../../assets/img/dot4.svg"); }
   .project__link {
     color: #203F63;
     text-decoration: none;
