@@ -50,7 +50,7 @@
     position: relative;
     margin: 0.5rem 0 0 1rem;
 
-    &--item{
+    &--item1{
       padding: 0 0 0 20px;
       margin: 0.2rem;
       display: block;
@@ -64,7 +64,58 @@
         display: block;
         width: 18px;
         height: 18px;
-        background: url('../../assets/img/dot.svg');
+        background: url('../../assets/img/dot1.svg');
+      }
+    }
+    &--item2{
+      padding: 0 0 0 20px;
+      margin: 0.2rem;
+      display: block;
+      font-size: 1.25rem;
+
+      &::before {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        background: url('../../assets/img/dot2.svg');
+      }
+    }
+    &--item3{
+      padding: 0 0 0 20px;
+      margin: 0.2rem;
+      display: block;
+      font-size: 1.25rem;
+
+      &::before {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        background: url('../../assets/img/dot3.svg');
+      }
+    }
+    &--item4{
+      padding: 0 0 0 20px;
+      margin: 0.2rem;
+      display: block;
+      font-size: 1.25rem;
+
+      &::before {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        background: url('../../assets/img/dot4.svg');
       }
     }
   }
