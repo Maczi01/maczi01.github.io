@@ -2,7 +2,8 @@
 //paginacja https://www.youtube.com/watch?v=IqYiVHrO2U8
 //paginacja https://github.com/TylerPottsDev/vanillajs-pagination/blob/master/main.js
 //underliny https://codepen.io/cassie-codes/pen/rNNGdmw
-console.log(`Hello world!`);
+console.log(`Welcome in console on my website! Greetings, Mati! 🦆`);
+
 const list = document.querySelector(".projects__list");
 const side = document.querySelector(".side");
 
@@ -56,4 +57,7 @@ function changeDotColor(language) {
             return "project__language--item4";
     }
 }
+
+
+
 

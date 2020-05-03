@@ -44,14 +44,16 @@
   //position: relative;
   border-radius: 15px;
   min-height: 18rem;
+
   &__logo {
     padding: 0.5rem;
   }
-  &__language{
+
+  &__language {
     position: relative;
     margin: 0.5rem 0 0 1rem;
 
-    &--item1{
+    &--item1 {
       padding: 0 0 0 20px;
       margin: 0.2rem;
       display: block;
@@ -66,9 +68,13 @@
         width: 18px;
         height: 18px;
         background: url('../../assets/img/dot1.svg');
+        @media (max-width: $mobile) {
+          top: -1px;
+        }
       }
     }
-    &--item2{
+
+    &--item2 {
       padding: 0 0 0 20px;
       margin: 0.2rem;
       display: block;
@@ -83,9 +89,13 @@
         width: 18px;
         height: 18px;
         background: url('../../assets/img/dot2.svg');
+        @media (max-width: $mobile) {
+          top: -1px;
+        }
       }
     }
-    &--item3{
+
+    &--item3 {
       padding: 0 0 0 20px;
       margin: 0.2rem;
       display: block;
@@ -100,9 +110,13 @@
         width: 18px;
         height: 18px;
         background: url('../../assets/img/dot3.svg');
+        @media (max-width: $mobile) {
+          top: -1px;
+        }
       }
     }
-    &--item4{
+
+    &--item4 {
       padding: 0 0 0 20px;
       margin: 0.2rem;
       display: block;
@@ -117,6 +131,9 @@
         width: 18px;
         height: 18px;
         background: url('../../assets/img/dot4.svg');
+        @media (max-width: $mobile) {
+          top: -1px;
+        }
       }
     }
   }
@@ -129,6 +146,7 @@
     font-size: 1.125rem;
     display: inline-flex;
     align-items: center;
+
     & + & {
       margin-left: 48px;
       position: relative;
@@ -142,7 +160,9 @@
         position: absolute;
         left: -26px;
         pointer-events: none;
-
+        @media (max-width: $mobile) {
+          display: none
+        }
       }
     }
 
@@ -174,6 +194,13 @@
     height: 50px;
     text-align: right;
     width: 100%;
+    @media (max-width: $mobile) {
+      text-align: left;
+      height: 50px;
+      justify-content: center;
+      padding: 1rem 2rem;
+
+    }
   }
 
 
