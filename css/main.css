@@ -489,6 +489,9 @@ template {
         width: 18px;
         height: 18px;
         background: url("../../assets/img/dot1.svg"); }
+        @media (max-width: 767px) {
+          .project__language--item1::before {
+            top: -1px; } }
     .project__language--item2 {
       padding: 0 0 0 20px;
       margin: 0.2rem;
@@ -503,6 +506,9 @@ template {
         width: 18px;
         height: 18px;
         background: url("../../assets/img/dot2.svg"); }
+        @media (max-width: 767px) {
+          .project__language--item2::before {
+            top: -1px; } }
     .project__language--item3 {
       padding: 0 0 0 20px;
       margin: 0.2rem;
@@ -517,6 +523,9 @@ template {
         width: 18px;
         height: 18px;
         background: url("../../assets/img/dot3.svg"); }
+        @media (max-width: 767px) {
+          .project__language--item3::before {
+            top: -1px; } }
     .project__language--item4 {
       padding: 0 0 0 20px;
       margin: 0.2rem;
@@ -531,6 +540,9 @@ template {
         width: 18px;
         height: 18px;
         background: url("../../assets/img/dot4.svg"); }
+        @media (max-width: 767px) {
+          .project__language--item4::before {
+            top: -1px; } }
   .project__link {
     color: #203F63;
     text-decoration: none;
@@ -554,6 +566,9 @@ template {
         position: absolute;
         left: -26px;
         pointer-events: none; }
+        @media (max-width: 767px) {
+          .project__link + .project__link::after {
+            display: none; } }
     .project__link::before {
       content: "";
       display: block;
@@ -575,6 +590,14 @@ template {
     height: 50px;
     text-align: right;
     width: 100%; }
+    @media (max-width: 767px) {
+      .project__footer {
+        text-align: left;
+        height: 50px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 1rem 2rem; } }
   .project__description {
     font-style: normal;
     font-weight: 400;
@@ -696,5 +719,9 @@ body {
   background-size: 90%;
   background-repeat: no-repeat;
   color: black; }
+  @media (max-width: 767px) {
+    .side--visible {
+      bottom: 10px;
+      right: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
