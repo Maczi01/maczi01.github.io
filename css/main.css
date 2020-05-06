@@ -666,10 +666,19 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .social__item + .social__item {
-    margin-left: 1.5rem; }
+  .social__item {
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    margin-right: 1.5rem; }
+  .social__item--strava {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    margin-right: 1.5rem; }
   .social__link {
-    text-decoration: none; }
+    text-decoration: none;
+    margin: 0; }
 
 html {
   -webkit-box-sizing: border-box;
