@@ -9,6 +9,9 @@
     font-weight: 400;
     border-bottom: 4px solid $blue;
     padding: 10px;
+    @media (max-width: $mobile) {
+      text-align: center
+    }
   }
 
   &__description {
