@@ -429,6 +429,9 @@ template {
     font-weight: 400;
     border-bottom: 4px solid #203F63;
     padding: 10px; }
+    @media (max-width: 767px) {
+      .projects__title {
+        text-align: center; } }
   .projects__description {
     font-size: 1.25rem;
     max-width: 580px;
