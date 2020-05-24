@@ -322,7 +322,7 @@ template {
   @media (max-width: 767px) {
     .hero {
       padding: 12rem 16px 184px;
-      background-position: left top; } }
+      background-position: 20px 20px; } }
   .hero__title {
     max-width: 780px;
     font-style: normal;
